@@ -1,0 +1,7 @@
+.search-result {
+  @apply flex justify-center;
+}
+
+.error-message {
+  @apply text-red-400 font-semibold text-lg;
+}

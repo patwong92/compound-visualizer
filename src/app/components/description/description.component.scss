@@ -1,0 +1,7 @@
+a {
+  @apply font-semibold;
+}
+
+a:hover {
+  @apply font-semibold text-blue-600;
+}

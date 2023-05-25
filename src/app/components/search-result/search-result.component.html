@@ -1,0 +1,13 @@
+<div class="search-result">
+  <div *ngIf="isLoading$ | async">
+    <mat-spinner />
+  </div>
+  <div *ngIf="error$ | async">
+    <div class="error-message">
+      Unable to find chemical compound. Please check your query
+    </div>
+  </div>
+  <div *ngIf="(error$ | async) === false && !!(imageUrl$ | async)">
+    <img alt="compound image" [src]="imageUrl$ | async" />
+  </div>
+</div>

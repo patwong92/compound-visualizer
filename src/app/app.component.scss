@@ -1,0 +1,7 @@
+.app {
+  @apply flex flex-col mt-10 h-full px-3 text-center;
+
+  h1 {
+    @apply text-4xl mb-4;
+  }
+}

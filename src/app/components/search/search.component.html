@@ -1,0 +1,12 @@
+<form class="search-form" [formGroup]="searchForm">
+  <input placeholder="Compound Name" formControlName="query" />
+  <button
+    (click)="search()"
+    [ngStyle]="{
+      'background-color': (isLoading$ | async) ? '#bae6fd' : '#0284c7'
+    }"
+    [disabled]="isLoading$ | async"
+  >
+    Search
+  </button>
+</form>
